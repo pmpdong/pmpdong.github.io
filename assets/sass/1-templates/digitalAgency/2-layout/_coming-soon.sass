@@ -1,0 +1,82 @@
+
+/* 21.0: Coming Soon area */
+.damke_coming-soon-area
+	+tab
+		padding: 150px 0px
+	.damke_banner-shape
+		&.style-2
+			height: 100vh
+			overflow: hidden
+/* 21.1: DamKe Coming Soon News Letter */
+.damke_coming-soon-newsletter
+	position: relative
+	border-bottom: 1px solid $damke-p1
+	margin-bottom: 50px
+	input 
+		border: 0
+		font-size: 18px
+		font-weight: $regular
+		width: 100%
+		color: #222222
+		padding-left: 5px
+		caret-color: $damke-p1
+		height: 50px
+		&::placeholder
+			color: $damke-s1
+		&:focus 
+			&::placeholder 
+				opacity: 0
+				visibility: hidden
+		+mobileXs
+			font-size: 20px
+	button 
+		position: absolute
+		right: 0
+		top: 50%
+		transform: translateY(-50%)
+		.cls-1
+			fill: $damke-p1
+
+.damke_coming-soon-inner
+	height: 100vh
+	padding-top: 107px
+	+tab
+		padding-top: 120px
+	.banner-content
+		+tab
+			text-align: center
+
+		h1 
+			margin-bottom: 32px
+			font-size: 60px !important
+			font-weight: 600
+			+mobileMd
+				font-size: 48px !important
+			+mobileXs
+				font-size: 25px !important
+	.coming-soon-image
+		+tab
+			margin-bottom: 12px
+
+/* 21.1: DamKe Coming Soon Count Down */
+.damke_countdown-wrap
+	.damke_countdown
+		ul 
+			li 	
+				+mobileLg
+					text-align: center
+				span 	
+					font-size: 48px
+					font-weight: $medium
+					line-height: 1.2
+					@extend .damke_heading-color
+					+mobileLg
+						font-size: 36px
+					+mobileXs
+						font-size: 30px
+				span + span 
+					display: block 
+					font-size: 22px
+					font-weight: $medium
+					+mobileXs
+						font-size: 18px

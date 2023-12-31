@@ -1,0 +1,76 @@
+.damke_blog-section
+    position: relative
+    .damke_rm-btn
+        position: absolute
+        top: -104px
+        right: 0
+        +tab
+            right: 15px
+
+.damke_blog-item
+    background-color: #fff
+    box-shadow: 0px 0px 5px rgba(0,0,0,.1)
+    margin-bottom: 50px
+    border-radius: 20px
+    &:hover
+        .damke_post-thumb
+            img
+                transform: scale(1.2)
+    .damke_post-thumb
+        overflow: hidden
+        display: block
+        border-top-left-radius: 20px
+        border-top-right-radius: 20px
+        img
+            transition: 1.5s ease
+
+.damke_blog-info
+    padding: 37px 30px 30px 30px
+    h3	
+        font-weight: 600
+        font-size: 22px
+        font-family: $popins
+        margin-bottom: 20px
+        line-height: 1.48
+        a
+            color: $damke-heading
+            &:hover
+                color: $damke-p1
+    p
+        line-height: 1.8
+    .damke_more-btn 
+        margin-top: 20px
+    .damke_blog-meta
+        margin-bottom: 15px
+        .list-inline
+            li
+                display: inline-block
+                margin-right: 30px
+                font-size: 14px
+                color: #505050
+                a
+                    color: $damke-p1
+                    font-size: 14px
+                    margin-right: 5px
+                    &:after
+                        content: ","
+                        color: green
+                    &:last-child
+                        &:after
+                            display: none
+
+.damke_pagination
+    span, a
+        height: 50px
+        width: 50px
+        line-height: 50px
+        border-radius: 50%
+        text-align: center
+        border: 1px solid #f1f1f1
+        display: inline-block
+        color: $damke-p1
+        transition: .3s
+        &:hover
+            background-color: $damke-p1
+            border-color: transparent
+            color: $white
